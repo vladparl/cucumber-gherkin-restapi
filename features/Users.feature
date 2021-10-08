@@ -5,8 +5,8 @@ Scenario: Create user
     And I set body to
     """
     {
-    "name": "morpheus",
-    "job": "leader"
+    "name": "test",
+    "job": "user"
     }
     """
     When receive a response
