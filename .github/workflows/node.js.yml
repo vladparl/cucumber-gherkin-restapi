@@ -32,4 +32,4 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
        path: reports/cucumber_report.html
-       if-no-files-found: error # 'warn' 
+       retention-days: 30
