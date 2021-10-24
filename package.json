@@ -4,7 +4,8 @@
   "description": "Boilerplate project to run REST API tests with Cucumber &amp; Pactum",
   "main": "index.js",
   "scripts": {
-    "test": "cucumber-js --publish"
+    "test": "cucumber-js --publish --format json:reports/report.json",
+    "report": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,7 @@
     "pactum": "^3.0.17"
   },
   "devDependencies": {
-    "@cucumber/cucumber": "^7.3.1"
+    "@cucumber/cucumber": "^7.3.1",
+    "cucumber-html-reporter": "^5.5.0"
   }
 }

@@ -10,6 +10,20 @@ Boilerplate project to run REST API tests with [Cucumber](https://cucumber.io) a
 4. npm install --save-dev @cucumber/cucumber (Install Cucumber)
 ```
 
+## Install Reporting
+```
+https://www.npmjs.com/package/cucumber-html-reporter
+1. Run npm i cucumber-html-reporter
+2. Run npm install cucumber-html-reporter --save-dev
+3. Create index.js file
+4. Update scripts in package.json with:
+    "test": "cucumber-js --publish --format json:reports/report.json",
+    "report": "node index.js"
+5. Create  folder reports and inside create one empty report.json file
+6. Run "npm run test" to execute tests
+7. Run "npm run report" to see report
+```
+
 ## Sample Test Case
 
 ```gherkin
@@ -32,12 +46,6 @@ Feature: Regres
         }
       }
       """
-```
-
-## Running Tests
-
-```sh
-npm run test
 ```
 
 ## Gherkin Expressions
