@@ -4,8 +4,10 @@ Boilerplate project to run REST API tests with [Cucumber](https://cucumber.io) a
 
 ## Instalation
 ```sh
-npm init -y
-npm install --save-dev @cucumber/cucumber
+1. Install Node.js
+2. npm install (Install NPM)
+3. npm init -y (Initialize the project)
+4. npm install --save-dev @cucumber/cucumber (Install Cucumber)
 ```
 
 ## Sample Test Case
