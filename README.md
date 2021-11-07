@@ -53,7 +53,7 @@ Feature: Regres
 Sample Step Definitions
 
 ```gherkin
-    GIVEN set path param: (.*) in URL with value: (.*)
+    Given set path param: (.*) in URL with value: (.*)
     _Given set path parameter "Name" in URL with value "12345"_
     
     Given set query parameter (.*) with value (.*)
@@ -93,15 +93,28 @@ Sample Step Definitions
   
     Then response status is {int}
     _Then response status is 200_
-    I expect response header (.*) should be (.*)
-    I expect response header (.*) should have (.*)
-    I expect response should have a json
-    I expect response should have a json at (.*)
-    I expect response should have a json like
-    I expect response should have a json like at (.*)
-    I expect response should have a json schema
-    I expect response should have a json schema at (.*)
-    I expect response should have a body
-    I expect response should have {string}
-    I store response at (.*) as (.*)
+    
+    Then response header (.*) is (.*)
+    Then response header "data.user.name" is "John"
+    
+    Then response header (.*) contains (.*)
+    Then response header "data.user.name" contains ["Trpe", "Mile", "Petre"]
+    
+    Then response should have a json
+    
+    Then response should have a json at (.*)
+    
+    Then response should have a json like
+    
+    Then response should have a json like at (.*)
+    
+    Then response should have a json schema
+    
+    Then response should have a json schema at (.*)
+    
+    Then response should have a body
+    
+    Then response should have {string}
+    
+    Then store response (.*) in (.*)
 ```
