@@ -53,7 +53,7 @@ Feature: Regres
 Sample Step Definitions
 
 ```gherkin
-    Given set path param: (.*) in URL with value: (.*)
+    GIVEN set path param: (.*) in URL with value: (.*)
     _Given set path parameter "Name" in URL with value "12345"_
     
     Given set query parameter (.*) with value (.*)
