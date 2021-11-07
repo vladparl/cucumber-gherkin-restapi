@@ -10,3 +10,8 @@ Feature: Pivot
     """
     Then receive a response
     And response status is 201
+
+  Scenario: Login user
+    Given baseURL is https://dog.ceo
+    When make a GET request to /api/breeds/image/random
+    Then receive a response

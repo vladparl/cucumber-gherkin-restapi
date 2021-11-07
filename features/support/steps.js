@@ -1,10 +1,15 @@
 const pactum = require('pactum');
+const { request } = require('pactum');
 const { Given, When, Then, Before, After } = require('@cucumber/cucumber');
 
 let spec = pactum.spec();
 
 Before(() => {
   spec = pactum.spec();
+});
+
+Given(/^baseURL is (.*)$/, function (baseURL) {
+  request.setBaseUrl(baseURL);
 });
 
 Given(/^set path parameter: (.*) in URL with value: (.*)$/, function (key, value) {
