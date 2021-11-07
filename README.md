@@ -53,50 +53,46 @@ Feature: Regres
 Sample Step Definitions
 
 ```gherkin
-    GIVEN
+    Given set path param: (.*) in URL with value: (.*)
+    _Given set path parameter "Name" in URL with value "12345"_
     
-    set path param: (.*) in URL with value: (.*)
-    Example: Given set path parameter "Name" in URL with value "12345"
+    Given set query parameter (.*) with value (.*)
+    _Given set query parameter "Name" with value "12345"_
     
-    set query parameter (.*) with value (.*)
-    Example: Given set query parameter "Name" with value "12345"
-    
-    set basic authentication credentials (.*) and (.*)
-    Example: Given set basic authentication credentials "username" and "password"
+    Given set basic authentication credentials (.*) and (.*)
+    _Given set basic authentication credentials "username" and "password"_
 
-    set header (.*) with value (.*)
-    Example: Given set header "Authorization" with value "token"
+    Given set header (.*) with value (.*)
+    _Given set header "Authorization" with value "token"_
     
-    upload file at filepath: (.*)
-    Example: upload file at filepath: "api/data/upload"
+    Given upload file at filepath: (.*)
+    _Given upload file at filepath: "api/data/upload"_
     
-    set multi-part form param (.*) to (.*)
-    Example: set multi-part form param "" to ""
+    Given set multi-part form param (.*) to (.*)
+    _Given set multi-part form param "" to ""_
     
-    set body to:
-    Example: WHEN set body to:
+    When make a (.*) request to (.*)
+    _When make a "POST" request to "/api/users"_
+    
+    When make a (.*) request with body to (.*)$/
+    _When make a "POST" request with body to "/api/user/create"
     {
         "username": "example"
         "password": "example"
-    }
+    }_
     
-    WHEN
-    make a (.*) request to (.*)
-    Example: When make a "POST" request to "/api/users"
-    
-    make a (.*) request with body to (.*)$/
-    Example: make a "POST" request with body to "/api/user/create"
+    When set body to:
+    _When set body to:
     {
         "username": "example"
         "password": "example"
-    }
+    }_
     
-    
-    THEN
-    receive a response (Mandatory step which guarantees that response is returned)
+    Then receive a response 
+    _(Mandatory step which guarantees that response is returned)_
   
-  Then
-    I expect response should have a status {int}
+    Then response status is {int}
+    _Then response status is 200_
     I expect response header (.*) should be (.*)
     I expect response header (.*) should have (.*)
     I expect response should have a json
