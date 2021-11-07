@@ -1,8 +1,8 @@
 Feature: Regres
 
   Scenario: Get A User
-    When I make a GET request to /api/users/1
-    Then I receive a response
+    When make a GET request to /api/users/1
+    Then receive a response
     And response status is 200
     And response should have a json at data
       """
@@ -14,7 +14,7 @@ Feature: Regres
         "avatar":"https://reqres.in/img/faces/1-image.jpg"
       }
       """
-    And I expect response should have a json like
+    And response should have a json like
       """
       {
         "data": 
@@ -26,17 +26,17 @@ Feature: Regres
       """
 
   Scenario: List Users
-    When I make a GET request to /api/users
-    And I set query parameter: page with value: 2
-    Then I receive a response
+    When make a GET request to /api/users
+    And set query parameter: page with value: 2
+    Then receive a response
     And response status is 200
-    And I expect response should have a json like
+    And response should have a json like
     """
     {
       "page": 2
     }
     """
-    And I expect response should have a json schema
+    And response should have a json schema
       """
       {
         "type": "object",
@@ -47,15 +47,15 @@ Feature: Regres
         }
       }
       """
-    And I store response at data[0].id as UserId
+    And store response data[0].id in UserId
   
   Scenario: Get A User With Id
-    When I make a GET request to /api/users/{id}
-    And I set path parameter: id in URL with value: $S{UserId}
-    Then I receive a response
+    When make a GET request to /api/users/{id}
+    And set path parameter: id in URL with value: $S{UserId}
+    Then receive a response
     And response status is 200
     And response header content-type is application/json; charset=utf-8
-    And I expect response should have a json like
+    And response should have a json like
     """
     {
       "data": {
@@ -65,22 +65,22 @@ Feature: Regres
     """
 
   Scenario: Create A User
-    When I make a POST request to /api/users
-    And I set body to:
+    When make a POST request to /api/users
+    And set body to:
     """
     {
       "name": "morpheus",
       "job": "leader"
     }
     """
-    Then I receive a response
+    Then receive a response
     And response status is 201
 
   Scenario: Take a list of users
-    When I make a GET request to /api/users?page=2
-    Then I receive a response
+    When make a GET request to /api/users?page=2
+    Then receive a response
     And response status is 200
-    And I expect response should have a json like
+    And response should have a json like
     """
     {
        "support": {

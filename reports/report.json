@@ -22,14 +22,14 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 4,
-            "name": "I make a GET request to /api/users/1",
+            "name": "make a GET request to /api/users/1",
             "match": {
               "location": "features\\support\\steps.js:34"
             },
@@ -42,13 +42,13 @@
             "arguments": [],
             "keyword": "Then ",
             "line": 5,
-            "name": "I receive a response",
+            "name": "receive a response",
             "match": {
               "location": "features\\support\\steps.js:47"
             },
             "result": {
               "status": "passed",
-              "duration": 465000000
+              "duration": 364000000
             }
           },
           {
@@ -61,7 +61,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3000000
+              "duration": 2000000
             }
           },
           {
@@ -91,13 +91,13 @@
             ],
             "keyword": "And ",
             "line": 17,
-            "name": "I expect response should have a json like",
+            "name": "response should have a json like",
             "match": {
               "location": "features\\support\\steps.js:71"
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 2000000
             }
           },
           {
@@ -139,39 +139,39 @@
             "arguments": [],
             "keyword": "When ",
             "line": 29,
-            "name": "I make a GET request to /api/users",
+            "name": "make a GET request to /api/users",
             "match": {
               "location": "features\\support\\steps.js:34"
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 30,
-            "name": "I set query parameter: page with value: 2",
+            "name": "set query parameter: page with value: 2",
             "match": {
               "location": "features\\support\\steps.js:14"
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 31,
-            "name": "I receive a response",
+            "name": "receive a response",
             "match": {
               "location": "features\\support\\steps.js:47"
             },
             "result": {
               "status": "passed",
-              "duration": 280000000
+              "duration": 278000000
             }
           },
           {
@@ -184,7 +184,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
@@ -196,7 +196,7 @@
             ],
             "keyword": "And ",
             "line": 33,
-            "name": "I expect response should have a json like",
+            "name": "response should have a json like",
             "match": {
               "location": "features\\support\\steps.js:71"
             },
@@ -214,20 +214,20 @@
             ],
             "keyword": "And ",
             "line": 39,
-            "name": "I expect response should have a json schema",
+            "name": "response should have a json schema",
             "match": {
               "location": "features\\support\\steps.js:79"
             },
             "result": {
               "status": "passed",
-              "duration": 23000000
+              "duration": 27000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 50,
-            "name": "I store response at data[0].id as UserId",
+            "name": "store response data[0].id in UserId",
             "match": {
               "location": "features\\support\\steps.js:95"
             },
@@ -275,7 +275,7 @@
             "arguments": [],
             "keyword": "When ",
             "line": 53,
-            "name": "I make a GET request to /api/users/{id}",
+            "name": "make a GET request to /api/users/{id}",
             "match": {
               "location": "features\\support\\steps.js:34"
             },
@@ -288,7 +288,7 @@
             "arguments": [],
             "keyword": "And ",
             "line": 54,
-            "name": "I set path parameter: id in URL with value: $S{UserId}",
+            "name": "set path parameter: id in URL with value: $S{UserId}",
             "match": {
               "location": "features\\support\\steps.js:10"
             },
@@ -301,13 +301,13 @@
             "arguments": [],
             "keyword": "Then ",
             "line": 55,
-            "name": "I receive a response",
+            "name": "receive a response",
             "match": {
               "location": "features\\support\\steps.js:47"
             },
             "result": {
               "status": "passed",
-              "duration": 267000000
+              "duration": 268000000
             }
           },
           {
@@ -345,7 +345,7 @@
             ],
             "keyword": "And ",
             "line": 58,
-            "name": "I expect response should have a json like",
+            "name": "response should have a json like",
             "match": {
               "location": "features\\support\\steps.js:71"
             },
@@ -393,7 +393,7 @@
             "arguments": [],
             "keyword": "When ",
             "line": 68,
-            "name": "I make a POST request to /api/users",
+            "name": "make a POST request to /api/users",
             "match": {
               "location": "features\\support\\steps.js:34"
             },
@@ -411,7 +411,7 @@
             ],
             "keyword": "And ",
             "line": 69,
-            "name": "I set body to:",
+            "name": "set body to:",
             "match": {
               "location": "features\\support\\steps.js:43"
             },
@@ -424,13 +424,13 @@
             "arguments": [],
             "keyword": "Then ",
             "line": 76,
-            "name": "I receive a response",
+            "name": "receive a response",
             "match": {
               "location": "features\\support\\steps.js:47"
             },
             "result": {
               "status": "passed",
-              "duration": 497000000
+              "duration": 305000000
             }
           },
           {
@@ -443,7 +443,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -485,7 +485,7 @@
             "arguments": [],
             "keyword": "When ",
             "line": 80,
-            "name": "I make a GET request to /api/users?page=2",
+            "name": "make a GET request to /api/users?page=2",
             "match": {
               "location": "features\\support\\steps.js:34"
             },
@@ -498,13 +498,13 @@
             "arguments": [],
             "keyword": "Then ",
             "line": 81,
-            "name": "I receive a response",
+            "name": "receive a response",
             "match": {
               "location": "features\\support\\steps.js:47"
             },
             "result": {
               "status": "passed",
-              "duration": 397000000
+              "duration": 283000000
             }
           },
           {
@@ -517,7 +517,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
@@ -529,7 +529,7 @@
             ],
             "keyword": "And ",
             "line": 83,
-            "name": "I expect response should have a json like",
+            "name": "response should have a json like",
             "match": {
               "location": "features\\support\\steps.js:71"
             },
@@ -593,26 +593,26 @@
             ],
             "keyword": "When ",
             "line": 4,
-            "name": "I make a POST request with body to /api/users",
+            "name": "make a POST request with body to /api/users",
             "match": {
               "location": "features\\support\\steps.js:38"
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 11,
-            "name": "I receive a response",
+            "name": "receive a response",
             "match": {
               "location": "features\\support\\steps.js:47"
             },
             "result": {
               "status": "passed",
-              "duration": 314000000
+              "duration": 429000000
             }
           },
           {
@@ -678,7 +678,7 @@
             "arguments": [],
             "keyword": "When ",
             "line": 4,
-            "name": "I make a POST request to /api/users",
+            "name": "make a POST request to /api/users",
             "match": {
               "location": "features\\support\\steps.js:34"
             },
@@ -696,26 +696,26 @@
             ],
             "keyword": "And ",
             "line": 5,
-            "name": "I set body to:",
+            "name": "set body to:",
             "match": {
               "location": "features\\support\\steps.js:43"
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 12,
-            "name": "I receive a response",
+            "name": "receive a response",
             "match": {
               "location": "features\\support\\steps.js:47"
             },
             "result": {
               "status": "passed",
-              "duration": 398000000
+              "duration": 764000000
             }
           },
           {
