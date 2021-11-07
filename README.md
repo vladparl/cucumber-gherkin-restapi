@@ -53,9 +53,9 @@ Feature: Regres
 Sample Step Definitions
 
 ```gherkin
-  Given
-    I make a (.*) request to (.*)
-    I set path param (.*) to (.*)
+    make a (.*) request to (.*)
+    Given set path param: (.*) in URL with value: (.*)
+    Example: Given set path parameter: id in URL with value: $S{UserId}
     I set query param (.*) to (.*)
     I set header (.*) to (.*)
     I set basic authentication credentials (.*) and (.*)
