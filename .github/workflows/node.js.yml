@@ -30,6 +30,7 @@ jobs:
     - run: npm test
     - name: 'Upload Artifact'
       uses: actions/upload-artifact@v2
+    - run: node index.js
       with:
        path: reports/cucumber_report.html
        retention-days: 30
