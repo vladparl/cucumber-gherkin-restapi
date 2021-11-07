@@ -53,18 +53,47 @@ Feature: Regres
 Sample Step Definitions
 
 ```gherkin
+    GIVEN
+    
+    set path param: (.*) in URL with value: (.*)
+    Example: Given set path parameter "Name" in URL with value "12345"
+    
+    set query parameter (.*) with value (.*)
+    Example: Given set query parameter "Name" with value "12345"
+    
+    set basic authentication credentials (.*) and (.*)
+    Example: Given set basic authentication credentials "username" and "password"
+
+    set header (.*) with value (.*)
+    Example: Given set header "Authorization" with value "token"
+    
+    upload file at filepath: (.*)
+    Example: upload file at filepath: "api/data/upload"
+    
+    set multi-part form param (.*) to (.*)
+    Example: set multi-part form param "" to ""
+    
+    set body to:
+    Example: WHEN set body to:
+    {
+        "username": "example"
+        "password": "example"
+    }
+    
+    WHEN
     make a (.*) request to (.*)
-    Given set path param: (.*) in URL with value: (.*)
-    Example: Given set path parameter: id in URL with value: $S{UserId}
-    I set query param (.*) to (.*)
-    I set header (.*) to (.*)
-    I set basic authentication credentials (.*) and (.*)
-    I set body to
-    I set multipart form data (.*) to (.*)
-    I upload file at (.*)
-  
-  When
-    I receive a response
+    Example: When make a "POST" request to "/api/users"
+    
+    make a (.*) request with body to (.*)$/
+    Example: make a "POST" request with body to "/api/user/create"
+    {
+        "username": "example"
+        "password": "example"
+    }
+    
+    
+    THEN
+    receive a response (Mandatory step which guarantees that response is returned)
   
   Then
     I expect response should have a status {int}
