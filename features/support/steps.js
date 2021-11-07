@@ -7,19 +7,11 @@ Before(() => {
   spec = pactum.spec();
 });
 
-Given(/^Make a (.*) request to (.*)$/, function (method, endpoint) {
-  spec[method.toLowerCase()](endpoint);
-});
-
-Given(/^I make a (.*) request to (.*)$/, function (method, endpoint) {
-  spec[method.toLowerCase()](endpoint);
-});
-
-Given(/^I set path param (.*) to (.*)$/, function (key, value) {
+Given(/^I set path parameter: (.*) in URL with value: (.*)$/, function (key, value) {
   spec.withPathParams(key, value);
 });
 
-Given(/^I set query param (.*) to (.*)$/, function (key, value) {
+Given(/^I set query parameter: (.*) with value: (.*)$/, function (key, value) {
   spec.withQueryParams(key, value);
 });
 
@@ -27,15 +19,11 @@ Given(/^I set basic authentication credentials (.*) and (.*)$/, function (userna
   spec.withAuth(username, password);
 });
 
-Given(/^I set header (.*) to (.*)$/, function (key, value) {
+Given(/^I set header (.*) with value (.*)$/, function (key, value) {
   spec.withHeaders(key, value);
 });
 
-Given(/I set body to/, function (body) {
-  spec.withBody(body);
-});
-
-Given(/^I upload file at (.*)$/, function (filePath) {
+Given(/^I upload file at filepath: (.*)$/, function (filePath) {
   spec.withFile(filePath);
 });
 
@@ -43,27 +31,40 @@ Given(/^I set multi-part form param (.*) to (.*)$/, function (key, value) {
   spec.withMultiPartFormData(key, value);
 });
 
-When('receive a response', async function () {
+When(/^I make a (.*) request to (.*)$/, function (method, endpoint) {
+  spec[method.toLowerCase()](endpoint);
+});
+
+When(/^I make a (.*) request with body to (.*)$/, function (method, endpoint, body) {
+  spec[method.toLowerCase()](endpoint);
+  spec.withBody(body);
+});
+
+When(/I set body to:/, function (body) {
+  spec.withBody(body);
+});
+
+Then('I receive a response', async function () {
   await spec.toss();
 });
 
-Then('I expect response should have a status {int}', function (code) {
+Then('response status is {int}', function (code) {
   spec.response().should.have.status(code);
 });
 
-Then(/^I expect response header (.*) should be (.*)$/, function (key, value) {
+Then(/^response header (.*) is (.*)$/, function (key, value) {
   spec.response().should.have.header(key, value)
 });
 
-Then(/^I expect response header (.*) should have (.*)$/, function (key, value) {
+Then(/^response header (.*) contains (.*)$/, function (key, value) {
   spec.response().should.have.headerContains(key, value)
 });
 
-Then(/^I expect response should have a json$/, function (json) {
+Then(/^response have a json$/, function (json) {
   spec.response().should.have.json(JSON.parse(json));
 });
 
-Then(/^I expect response should have a json at (.*)$/, function (path, value) {
+Then(/^response should have a json at (.*)$/, function (path, value) {
   spec.response().should.have.json(path, JSON.parse(value));
 });
 

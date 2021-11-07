@@ -277,10 +277,10 @@ pre {
         <div class="navbar-header">
         
           <a class="navbar-brand">Cucumberjs Report</a>
-          <div class="project-name visible-md visible-lg">pactum-cucumber-boilerplate</div>
+          <div class="project-name visible-md visible-lg">BDD Rest API Testing Report</div>
           <div class="label-container">
             <span class="label label-success" onclick="toggle('.feature-passed')" title=scenarios>Passed: 6</span>
-            <span class="label label-danger" onclick="toggle('.feature-failed')" title=scenarios>Failed: 0</span>
+            <span class="label label-danger" onclick="toggle('.feature-failed')" title=scenarios>Failed: 1</span>
           </div>
         </div>
       </div>
@@ -288,7 +288,7 @@ pre {
 
     <div class="container">
 
-      <div class="generated-on">Mon Oct 25 2021 10:46:53 GMT+0200 (Central European Summer Time)</div>
+      <div class="generated-on">Sun Nov 07 2021 12:00:04 GMT+0100 (Central European Standard Time)</div>
 
       <div class="row">
         <div class="chart col-lg-6 col-md-6" id="piechart_features"></div>
@@ -315,7 +315,7 @@ pre {
               
               <div class="clearfix metadata col-xs-12 col-sm-6 col-md-6 col-lg-6">
                   <div class=pull-left>
-                    <strong> App Version: </strong>0.3.2
+                    <strong> App Version: </strong>1.0.0
                   </div>
               </div>
               
@@ -323,7 +323,7 @@ pre {
               
               <div class="clearfix metadata col-xs-12 col-sm-6 col-md-6 col-lg-6">
                   <div class=pull-right-lg>
-                    <strong> Test Environment: </strong>STAGING
+                    <strong> Test Environment: </strong>TESTING
                   </div>
               </div>
               
@@ -331,31 +331,7 @@ pre {
               
               <div class="clearfix metadata col-xs-12 col-sm-6 col-md-6 col-lg-6">
                   <div class=pull-left>
-                    <strong> Browser: </strong>Chrome  54.0.2840.98
-                  </div>
-              </div>
-              
-              
-              
-              <div class="clearfix metadata col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                  <div class=pull-right-lg>
                     <strong> Platform: </strong>Windows 10
-                  </div>
-              </div>
-              
-              
-              
-              <div class="clearfix metadata col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                  <div class=pull-left>
-                    <strong> Parallel: </strong>Scenarios
-                  </div>
-              </div>
-              
-              
-              
-              <div class="clearfix metadata col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                  <div class=pull-right-lg>
-                    <strong> Executed: </strong>Remote
                   </div>
               </div>
               
@@ -371,7 +347,7 @@ pre {
 <div class="row" xmlns="http://www.w3.org/1999/html">
 
 
-<div class="feature-passed">
+<div class="feature-failed">
 
     <div class="col-lg-6 col-md-6">
         <div class="panel panel-default">
@@ -381,14 +357,15 @@ pre {
                     <div class="tags">
                     </div>
                     
-                    <a data-toggle="collapse" href="#collapseFeaturepactum_cucumber_boilerplateda703cc0-98c1-4435-afb5-664dbf8bfb87">
+                    <a data-toggle="collapse" href="#collapseFeature_____est______esting__eportafd7a2b5-abd5-40cc-8c9b-e697d468a354">
                         <i class="glyphicon glyphicon-chevron-right"></i>
                         <i class="glyphicon glyphicon-chevron-down"></i>
                         <b>Feature:</b>Regres
                         <span class="label-container">
               <span class="label label-success"
-                                                         title="5 Scenarios Passed">5</span>
-              
+                                                         title="4 Scenarios Passed">4</span>
+              <span class="label label-danger"
+                                                         title="1 Scenarios Failed">1</span>
               
               
               
@@ -397,10 +374,8 @@ pre {
                     </a>
                 </h4>
             </div>
-            <div id="collapseFeaturepactum_cucumber_boilerplateda703cc0-98c1-4435-afb5-664dbf8bfb87" class="panel-collapse collapse">
+            <div id="collapseFeature_____est______esting__eportafd7a2b5-abd5-40cc-8c9b-e697d468a354" class="panel-collapse collapse">
                 <div class="panel-body">
-                    
-                    <div class="description">  In order to keep Regres api stable<br/>  As a tester<br/>  I want to make sure that everything works as expected</div>
                     
                     
                     
@@ -412,7 +387,7 @@ pre {
                                 <div class="tags">
                                 </div>
                                 
-                                <a data-toggle="collapse" href="#collapseScenariopactum_cucumber_boilerplate8abd4df7-c036-4e93-9ea7-b29dbb1bcdef">
+                                <a data-toggle="collapse" href="#collapseScenario_____est______esting__eporte34a3c21-e5c4-49da-8055-0492b8887381">
                                     <div>
 
                                         <div style="padding-right: 30px">
@@ -436,7 +411,7 @@ pre {
                                 </a>
                             </h4>
                         </div>
-                        <div id="collapseScenariopactum_cucumber_boilerplate8abd4df7-c036-4e93-9ea7-b29dbb1bcdef"
+                        <div id="collapseScenario_____est______esting__eporte34a3c21-e5c4-49da-8055-0492b8887381"
                              class="panel-collapse collapse">
                             <div class="panel-body">
                                 <div></div>
@@ -456,7 +431,7 @@ pre {
                                     
                                     
                                     <span class="text">
-                        <span class="keyword highlight">Given </span>
+                        <span class="keyword highlight">When </span>
                           <span> I make a GET request to /api/users/1</span>
                             
                           
@@ -494,50 +469,12 @@ pre {
                                     
                                     
                                     <span class="text">
-                        <span class="keyword highlight">When </span>
-                          <span> receive a response</span>
-                            
-                          
-                              <span class="step-duration">
-                               610ms
-                              </span>
-                            
-                         
-                            
-                          
-                          <!-- Adding data table data-->
-                          
-                      </span>
-                                
-                                
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                </div>
-                                </p>
-                                
-                                
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i
-                                            class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
                         <span class="keyword highlight">Then </span>
-                          <span> I expect response should have a status 200</span>
+                          <span> I receive a response</span>
                             
                           
                               <span class="step-duration">
-                               2ms
+                               424ms
                               </span>
                             
                          
@@ -571,7 +508,45 @@ pre {
                                     
                                     <span class="text">
                         <span class="keyword highlight">And </span>
-                          <span> I expect response should have a json at data</span>
+                          <span> response status is 200</span>
+                            
+                          
+                              <span class="step-duration">
+                               3ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">And </span>
+                          <span> response should have a json at data</span>
                             
                           
                               <span class="step-duration">
@@ -633,10 +608,11 @@ pre {
                                
                                
                                <pre class=info><br>{
-  "data": {
-    "id": 1,
-    "first_name": "George"
-  }
+  "data": 
+{
+  "id": 1,
+  "first_name": "George"
+}
 }</pre>
                                
 
@@ -674,7 +650,7 @@ pre {
                                 <div class="tags">
                                 </div>
                                 
-                                <a data-toggle="collapse" href="#collapseScenariopactum_cucumber_boilerplated716d988-7766-4953-a424-0e2b85b6035b">
+                                <a data-toggle="collapse" href="#collapseScenario_____est______esting__eport2f7353ce-95b9-4258-b1ed-75b7fcf3c1be">
                                     <div>
 
                                         <div style="padding-right: 30px">
@@ -698,7 +674,7 @@ pre {
                                 </a>
                             </h4>
                         </div>
-                        <div id="collapseScenariopactum_cucumber_boilerplated716d988-7766-4953-a424-0e2b85b6035b"
+                        <div id="collapseScenario_____est______esting__eport2f7353ce-95b9-4258-b1ed-75b7fcf3c1be"
                              class="panel-collapse collapse">
                             <div class="panel-body">
                                 <div></div>
@@ -718,12 +694,12 @@ pre {
                                     
                                     
                                     <span class="text">
-                        <span class="keyword highlight">Given </span>
-                          <span> Make a GET request to /api/users</span>
+                        <span class="keyword highlight">When </span>
+                          <span> I make a GET request to /api/users</span>
                             
                           
                               <span class="step-duration">
-                               1ms
+                               < 1ms
                               </span>
                             
                          
@@ -757,7 +733,7 @@ pre {
                                     
                                     <span class="text">
                         <span class="keyword highlight">And </span>
-                          <span> I set query param page to 2</span>
+                          <span> I set query parameter: page with value: 2</span>
                             
                           
                               <span class="step-duration">
@@ -794,12 +770,12 @@ pre {
                                     
                                     
                                     <span class="text">
-                        <span class="keyword highlight">When </span>
-                          <span> receive a response</span>
+                        <span class="keyword highlight">Then </span>
+                          <span> I receive a response</span>
                             
                           
                               <span class="step-duration">
-                               343ms
+                               215ms
                               </span>
                             
                          
@@ -832,8 +808,8 @@ pre {
                                     
                                     
                                     <span class="text">
-                        <span class="keyword highlight">Then </span>
-                          <span> I expect response should have a status 200</span>
+                        <span class="keyword highlight">And </span>
+                          <span> response status is 200</span>
                             
                           
                               <span class="step-duration">
@@ -921,7 +897,7 @@ pre {
                             
                           
                               <span class="step-duration">
-                               22ms
+                               18ms
                               </span>
                             
                          
@@ -972,7 +948,7 @@ pre {
                             
                           
                               <span class="step-duration">
-                               3ms
+                               2ms
                               </span>
                             
                          
@@ -1010,7 +986,7 @@ pre {
                                 <div class="tags">
                                 </div>
                                 
-                                <a data-toggle="collapse" href="#collapseScenariopactum_cucumber_boilerplatedbf3e60b-4d7d-47d7-95e2-3707b357247d">
+                                <a data-toggle="collapse" href="#collapseScenario_____est______esting__eport497b6e9c-79d2-4c06-9fcf-ca632567dc72">
                                     <div>
 
                                         <div style="padding-right: 30px">
@@ -1034,7 +1010,7 @@ pre {
                                 </a>
                             </h4>
                         </div>
-                        <div id="collapseScenariopactum_cucumber_boilerplatedbf3e60b-4d7d-47d7-95e2-3707b357247d"
+                        <div id="collapseScenario_____est______esting__eport497b6e9c-79d2-4c06-9fcf-ca632567dc72"
                              class="panel-collapse collapse">
                             <div class="panel-body">
                                 <div></div>
@@ -1054,8 +1030,8 @@ pre {
                                     
                                     
                                     <span class="text">
-                        <span class="keyword highlight">Given </span>
-                          <span> Make a GET request to /api/users/{id}</span>
+                        <span class="keyword highlight">When </span>
+                          <span> I make a GET request to /api/users/{id}</span>
                             
                           
                               <span class="step-duration">
@@ -1093,49 +1069,11 @@ pre {
                                     
                                     <span class="text">
                         <span class="keyword highlight">And </span>
-                          <span> I set path param id to $S{UserId}</span>
+                          <span> I set path parameter: id in URL with value: $S{UserId}</span>
                             
                           
                               <span class="step-duration">
-                               < 1ms
-                              </span>
-                            
-                         
-                            
-                          
-                          <!-- Adding data table data-->
-                          
-                      </span>
-                                
-                                
-
-                                    
-
-                                    
-
-                                    
-
-                                    
-                                </div>
-                                </p>
-                                
-                                
-                                
-                                <p class="scenario-container">
-                                <div class="row steps">
-                                    
-                                    
-                                    <span class="label label-success" title="Success"><i
-                                            class="glyphicon glyphicon-ok"></i></span>
-                                    
-                                    
-                                    <span class="text">
-                        <span class="keyword highlight">When </span>
-                          <span> receive a response</span>
-                            
-                          
-                              <span class="step-duration">
-                               269ms
+                               1ms
                               </span>
                             
                          
@@ -1169,11 +1107,11 @@ pre {
                                     
                                     <span class="text">
                         <span class="keyword highlight">Then </span>
-                          <span> I expect response should have a status 200</span>
+                          <span> I receive a response</span>
                             
                           
                               <span class="step-duration">
-                               1ms
+                               144ms
                               </span>
                             
                          
@@ -1207,11 +1145,49 @@ pre {
                                     
                                     <span class="text">
                         <span class="keyword highlight">And </span>
-                          <span> I expect response header content-type should have application/json; charset=utf-8</span>
+                          <span> response status is 200</span>
                             
                           
                               <span class="step-duration">
-                               1ms
+                               < 1ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">And </span>
+                          <span> response header content-type is application/json; charset=utf-8</span>
+                            
+                          
+                              <span class="step-duration">
+                               < 1ms
                               </span>
                             
                          
@@ -1249,7 +1225,7 @@ pre {
                             
                           
                               <span class="step-duration">
-                               1ms
+                               < 1ms
                               </span>
                             
                          
@@ -1297,10 +1273,10 @@ pre {
                                 <div class="tags">
                                 </div>
                                 
-                                <a data-toggle="collapse" href="#collapseScenariopactum_cucumber_boilerplate2e91d4ef-8f7f-4d77-9005-a754a0090012">
+                                <a data-toggle="collapse" href="#collapseScenario_____est______esting__eportfc86b8b7-32e7-40ff-b3f1-8f035cb7c96f">
                                     <div>
 
-                                        <div style="padding-right: 30px">
+                                        <div style="padding-right: 50px">
                                             <i class="glyphicon glyphicon-chevron-right"></i>
                                             <i class="glyphicon glyphicon-chevron-down"></i>
                                             <b>Scenario:</b>Create A User
@@ -1308,11 +1284,12 @@ pre {
                                         <div>
                             <span class="label-container">
                               <span class="label label-success"
-                                                               title="4 Steps Passed">4</span>
+                                                               title="3 Steps Passed">3</span>
                               
                               
                               
-                              
+                              <span class="label label-danger"
+                                                               title="1 Steps Failed">1</span>
                               
                             </span>
                                         </div>
@@ -1321,7 +1298,7 @@ pre {
                                 </a>
                             </h4>
                         </div>
-                        <div id="collapseScenariopactum_cucumber_boilerplate2e91d4ef-8f7f-4d77-9005-a754a0090012"
+                        <div id="collapseScenario_____est______esting__eportfc86b8b7-32e7-40ff-b3f1-8f035cb7c96f"
                              class="panel-collapse collapse">
                             <div class="panel-body">
                                 <div></div>
@@ -1341,8 +1318,8 @@ pre {
                                     
                                     
                                     <span class="text">
-                        <span class="keyword highlight">Given </span>
-                          <span> Make a POST request to /api/users</span>
+                        <span class="keyword highlight">When </span>
+                          <span> I make a POST request to /api/users</span>
                             
                           
                               <span class="step-duration">
@@ -1380,11 +1357,11 @@ pre {
                                     
                                     <span class="text">
                         <span class="keyword highlight">And </span>
-                          <span> I set body to</span>
+                          <span> I set body to:</span>
                             
                           
                               <span class="step-duration">
-                               < 1ms
+                               1ms
                               </span>
                             
                          
@@ -1426,12 +1403,12 @@ pre {
                                     
                                     
                                     <span class="text">
-                        <span class="keyword highlight">When </span>
-                          <span> receive a response</span>
+                        <span class="keyword highlight">Then </span>
+                          <span> I receive a response</span>
                             
                           
                               <span class="step-duration">
-                               299ms
+                               199ms
                               </span>
                             
                          
@@ -1459,17 +1436,17 @@ pre {
                                 <div class="row steps">
                                     
                                     
-                                    <span class="label label-success" title="Success"><i
-                                            class="glyphicon glyphicon-ok"></i></span>
+                                    <span class="label label-danger" title="Failed"><i
+                                            class="glyphicon glyphicon-remove"></i></span>
                                     
                                     
                                     <span class="text">
-                        <span class="keyword highlight">Then </span>
-                          <span> I expect response should have a status 201</span>
+                        <span class="keyword highlight">And </span>
+                          <span> response status is 201</span>
                             
                           
                               <span class="step-duration">
-                               1ms
+                               15ms
                               </span>
                             
                          
@@ -1480,6 +1457,66 @@ pre {
                       </span>
                                 
                                 
+
+                                    
+                                    <a href="#error0_35"
+                                       data-toggle="collapse" class="toggle">Show Error +</a>
+                                    <div id="error0_35"
+                                         class="collapse">
+                                        <pre class="info show-modal"
+                                             data-toggle="modal"
+                                             style="cursor: pointer"
+                                             data-target="#error-modal-0_35">
+                                            <br> AssertionError [ERR_ASSERTION]: HTTP status 503 !== 201
+    + expected - actual
+
+    -503
+    +201
+
+    at Expect._validateStatus (C:\Users\vlade\Desktop\Projects\BDD_Rest_Api_Testing\node_modules\pactum\src\models\expect.js:100:14)
+    at Expect.validate (C:\Users\vlade\Desktop\Projects\BDD_Rest_Api_Testing\node_modules\pactum\src\models\expect.js:45:10)
+    at Have._validate (C:\Users\vlade\Desktop\Projects\BDD_Rest_Api_Testing\node_modules\pactum\src\exports\expect.js:106:26)
+    at Have.status (C:\Users\vlade\Desktop\Projects\BDD_Rest_Api_Testing\node_modules\pactum\src\exports\expect.js:14:10)
+    at World.(anonymous) (C:\Users\vlade\Desktop\Projects\BDD_Rest_Api_Testing\features\support\steps.js:52:31)</pre>
+                                    </div>
+
+                                <div class="modal fade" id="error-modal-0_35" tabindex="-1" role="dialog"
+                                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close"><span aria-hidden="true">&times;</span>
+                                                </button>
+                                                <h4 class="modal-title" id="error-modal-title">
+                                                    Error
+                                                </h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h5>
+                                                    <pre><br>AssertionError [ERR_ASSERTION]: HTTP status 503 !== 201
+    + expected - actual
+
+    -503
+    +201
+
+    at Expect._validateStatus (C:\Users\vlade\Desktop\Projects\BDD_Rest_Api_Testing\node_modules\pactum\src\models\expect.js:100:14)
+    at Expect.validate (C:\Users\vlade\Desktop\Projects\BDD_Rest_Api_Testing\node_modules\pactum\src\models\expect.js:45:10)
+    at Have._validate (C:\Users\vlade\Desktop\Projects\BDD_Rest_Api_Testing\node_modules\pactum\src\exports\expect.js:106:26)
+    at Have.status (C:\Users\vlade\Desktop\Projects\BDD_Rest_Api_Testing\node_modules\pactum\src\exports\expect.js:14:10)
+    at World.(anonymous) (C:\Users\vlade\Desktop\Projects\BDD_Rest_Api_Testing\features\support\steps.js:52:31)</pre>
+                                                </h5>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                                    Close
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
 
                                     
 
@@ -1507,7 +1544,7 @@ pre {
                                 <div class="tags">
                                 </div>
                                 
-                                <a data-toggle="collapse" href="#collapseScenariopactum_cucumber_boilerplatef6d0f2ee-71a6-4060-8570-bd557790b796">
+                                <a data-toggle="collapse" href="#collapseScenario_____est______esting__eport5a80da90-6107-4843-8671-624acaaa55bb">
                                     <div>
 
                                         <div style="padding-right: 30px">
@@ -1531,7 +1568,7 @@ pre {
                                 </a>
                             </h4>
                         </div>
-                        <div id="collapseScenariopactum_cucumber_boilerplatef6d0f2ee-71a6-4060-8570-bd557790b796"
+                        <div id="collapseScenario_____est______esting__eport5a80da90-6107-4843-8671-624acaaa55bb"
                              class="panel-collapse collapse">
                             <div class="panel-body">
                                 <div></div>
@@ -1551,8 +1588,8 @@ pre {
                                     
                                     
                                     <span class="text">
-                        <span class="keyword highlight">Given </span>
-                          <span> Make a GET request to /api/users?page=2</span>
+                        <span class="keyword highlight">When </span>
+                          <span> I make a GET request to /api/users?page=2</span>
                             
                           
                               <span class="step-duration">
@@ -1589,12 +1626,12 @@ pre {
                                     
                                     
                                     <span class="text">
-                        <span class="keyword highlight">When </span>
-                          <span> receive a response</span>
+                        <span class="keyword highlight">Then </span>
+                          <span> I receive a response</span>
                             
                           
                               <span class="step-duration">
-                               287ms
+                               168ms
                               </span>
                             
                          
@@ -1627,8 +1664,8 @@ pre {
                                     
                                     
                                     <span class="text">
-                        <span class="keyword highlight">Then </span>
-                          <span> I expect response should have a status 200</span>
+                        <span class="keyword highlight">And </span>
+                          <span> response status is 200</span>
                             
                           
                               <span class="step-duration">
@@ -1730,10 +1767,10 @@ pre {
                     <div class="tags">
                     </div>
                     
-                    <a data-toggle="collapse" href="#collapseFeaturepactum_cucumber_boilerplatec84988a7-5c53-4e79-8b2c-5d9d250382ee">
+                    <a data-toggle="collapse" href="#collapseFeature_____est______esting__eport91d8f41f-5367-4dac-8fe2-4587fcee9ccc">
                         <i class="glyphicon glyphicon-chevron-right"></i>
                         <i class="glyphicon glyphicon-chevron-down"></i>
-                        <b>Feature:</b>Users
+                        <b>Feature:</b>Pivot
                         <span class="label-container">
               <span class="label label-success"
                                                          title="1 Scenarios Passed">1</span>
@@ -1746,7 +1783,7 @@ pre {
                     </a>
                 </h4>
             </div>
-            <div id="collapseFeaturepactum_cucumber_boilerplatec84988a7-5c53-4e79-8b2c-5d9d250382ee" class="panel-collapse collapse">
+            <div id="collapseFeature_____est______esting__eport91d8f41f-5367-4dac-8fe2-4587fcee9ccc" class="panel-collapse collapse">
                 <div class="panel-body">
                     
                     
@@ -1759,18 +1796,18 @@ pre {
                                 <div class="tags">
                                 </div>
                                 
-                                <a data-toggle="collapse" href="#collapseScenariopactum_cucumber_boilerplatebdc81571-1cf5-4582-a920-8321c1490053">
+                                <a data-toggle="collapse" href="#collapseScenario_____est______esting__eport639e2ab5-6710-49c2-b519-f84f3a24745e">
                                     <div>
 
                                         <div style="padding-right: 30px">
                                             <i class="glyphicon glyphicon-chevron-right"></i>
                                             <i class="glyphicon glyphicon-chevron-down"></i>
-                                            <b>Scenario:</b>Create user
+                                            <b>Scenario:</b>Login user
                                         </div>
                                         <div>
                             <span class="label-container">
                               <span class="label label-success"
-                                                               title="4 Steps Passed">4</span>
+                                                               title="3 Steps Passed">3</span>
                               
                               
                               
@@ -1783,7 +1820,7 @@ pre {
                                 </a>
                             </h4>
                         </div>
-                        <div id="collapseScenariopactum_cucumber_boilerplatebdc81571-1cf5-4582-a920-8321c1490053"
+                        <div id="collapseScenario_____est______esting__eport639e2ab5-6710-49c2-b519-f84f3a24745e"
                              class="panel-collapse collapse">
                             <div class="panel-body">
                                 <div></div>
@@ -1803,12 +1840,59 @@ pre {
                                     
                                     
                                     <span class="text">
-                        <span class="keyword highlight">Given </span>
-                          <span> Make a POST request to /api/users</span>
+                        <span class="keyword highlight">When </span>
+                          <span> I make a POST request with body to /api/users</span>
                             
                           
                               <span class="step-duration">
-                               1ms
+                               < 1ms
+                              </span>
+                            
+                         
+                            
+                               
+                               
+                               <pre class=info><br>{
+  "name": "morpheus",
+  "job": "leader"
+}</pre>
+                               
+
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Then </span>
+                          <span> I receive a response</span>
+                            
+                          
+                              <span class="step-duration">
+                               321ms
                               </span>
                             
                          
@@ -1842,7 +1926,176 @@ pre {
                                     
                                     <span class="text">
                         <span class="keyword highlight">And </span>
-                          <span> I set body to</span>
+                          <span> response status is 201</span>
+                            
+                          
+                              <span class="step-duration">
+                               1ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+</div>
+
+
+
+<div class="row" xmlns="http://www.w3.org/1999/html">
+
+
+<div class="feature-passed">
+
+    <div class="col-lg-6 col-md-6">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    
+                    <div class="tags">
+                    </div>
+                    
+                    <a data-toggle="collapse" href="#collapseFeature_____est______esting__eporte187624c-88fb-43f3-b4bd-eb156ef33a4e">
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                        <i class="glyphicon glyphicon-chevron-down"></i>
+                        <b>Feature:</b>Users
+                        <span class="label-container">
+              <span class="label label-success"
+                                                         title="1 Scenarios Passed">1</span>
+              
+              
+              
+              
+              
+                        </span>
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseFeature_____est______esting__eporte187624c-88fb-43f3-b4bd-eb156ef33a4e" class="panel-collapse collapse">
+                <div class="panel-body">
+                    
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags">
+                                </div>
+                                
+                                <a data-toggle="collapse" href="#collapseScenario_____est______esting__eport47197e44-0c7a-41a7-8eb9-582678f06612">
+                                    <div>
+
+                                        <div style="padding-right: 30px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b>Create user
+                                        </div>
+                                        <div>
+                            <span class="label-container">
+                              <span class="label label-success"
+                                                               title="4 Steps Passed">4</span>
+                              
+                              
+                              
+                              
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                    <div><small><i></i></small></div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenario_____est______esting__eport47197e44-0c7a-41a7-8eb9-582678f06612"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div></div>
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">When </span>
+                          <span> I make a POST request to /api/users</span>
+                            
+                          
+                              <span class="step-duration">
+                               < 1ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">And </span>
+                          <span> I set body to:</span>
                             
                           
                               <span class="step-duration">
@@ -1888,12 +2141,12 @@ pre {
                                     
                                     
                                     <span class="text">
-                        <span class="keyword highlight">When </span>
-                          <span> receive a response</span>
+                        <span class="keyword highlight">Then </span>
+                          <span> I receive a response</span>
                             
                           
                               <span class="step-duration">
-                               405ms
+                               214ms
                               </span>
                             
                          
@@ -1927,7 +2180,7 @@ pre {
                                     
                                     <span class="text">
                         <span class="keyword highlight">Then </span>
-                          <span> I expect response should have a status 201</span>
+                          <span> response status is 201</span>
                             
                           
                               <span class="step-duration">
@@ -1993,7 +2246,7 @@ pre {
         google.load("visualization", "1", {packages: ["corechart"]});
         google.setOnLoadCallback(function() {drawChart({
                                                             "title" : "Features",
-                                                            "failed" : 0,
+                                                            "failed" : 1,
                                                             "passed" : 2,
                                                             "notdefined" : 0,
                                                             "pending" : 0,
@@ -2003,7 +2256,7 @@ pre {
                                             });
         google.setOnLoadCallback(function() {drawChart({
                                                             "title" : "Scenarios",
-                                                            "failed" : 0,
+                                                            "failed" : 1,
                                                             "passed" : 6,
                                                             "notdefined" : 0,
                                                             "pending" : 0,

@@ -1,12 +1,12 @@
 [
   {
-    "description": "  In order to keep Regres api stable\n  As a tester\n  I want to make sure that everything works as expected",
+    "description": "",
     "elements": [
       {
         "description": "",
         "id": "regres;get-a-user",
         "keyword": "Scenario",
-        "line": 7,
+        "line": 3,
         "name": "Get A User",
         "steps": [
           {
@@ -22,60 +22,60 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 8,
-            "name": "I make a GET request to /api/users/1",
-            "match": {
-              "location": "features\\support\\steps.js:14"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 9,
-            "name": "receive a response",
+            "line": 4,
+            "name": "I make a GET request to /api/users/1",
             "match": {
-              "location": "features\\support\\steps.js:46"
+              "location": "features\\support\\steps.js:34"
             },
             "result": {
               "status": "passed",
-              "duration": 610000000
+              "duration": 1000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 10,
-            "name": "I expect response should have a status 200",
+            "line": 5,
+            "name": "I receive a response",
             "match": {
-              "location": "features\\support\\steps.js:50"
+              "location": "features\\support\\steps.js:47"
             },
             "result": {
               "status": "passed",
-              "duration": 2000000
+              "duration": 424000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "response status is 200",
+            "match": {
+              "location": "features\\support\\steps.js:51"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3000000
             }
           },
           {
             "arguments": [
               {
                 "content": "{\n  \"id\":1,\n  \"email\":\"george.bluth@reqres.in\",\n  \"first_name\":\"George\",\n  \"last_name\":\"Bluth\",\n  \"avatar\":\"https://reqres.in/img/faces/1-image.jpg\"\n}",
-                "line": 12
+                "line": 8
               }
             ],
             "keyword": "And ",
-            "line": 11,
-            "name": "I expect response should have a json at data",
+            "line": 7,
+            "name": "response should have a json at data",
             "match": {
-              "location": "features\\support\\steps.js:66"
+              "location": "features\\support\\steps.js:67"
             },
             "result": {
               "status": "passed",
@@ -85,15 +85,15 @@
           {
             "arguments": [
               {
-                "content": "{\n  \"data\": {\n    \"id\": 1,\n    \"first_name\": \"George\"\n  }\n}",
-                "line": 22
+                "content": "{\n  \"data\": \n{\n  \"id\": 1,\n  \"first_name\": \"George\"\n}\n}",
+                "line": 18
               }
             ],
             "keyword": "And ",
-            "line": 21,
+            "line": 17,
             "name": "I expect response should have a json like",
             "match": {
-              "location": "features\\support\\steps.js:70"
+              "location": "features\\support\\steps.js:71"
             },
             "result": {
               "status": "passed",
@@ -105,7 +105,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           }
         ],
@@ -116,7 +116,7 @@
         "description": "",
         "id": "regres;list-users",
         "keyword": "Scenario",
-        "line": 31,
+        "line": 28,
         "name": "List Users",
         "steps": [
           {
@@ -137,24 +137,24 @@
           },
           {
             "arguments": [],
-            "keyword": "Given ",
-            "line": 32,
-            "name": "Make a GET request to /api/users",
+            "keyword": "When ",
+            "line": 29,
+            "name": "I make a GET request to /api/users",
             "match": {
-              "location": "features\\support\\steps.js:10"
+              "location": "features\\support\\steps.js:34"
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 33,
-            "name": "I set query param page to 2",
+            "line": 30,
+            "name": "I set query parameter: page with value: 2",
             "match": {
-              "location": "features\\support\\steps.js:22"
+              "location": "features\\support\\steps.js:14"
             },
             "result": {
               "status": "passed",
@@ -163,24 +163,24 @@
           },
           {
             "arguments": [],
-            "keyword": "When ",
-            "line": 34,
-            "name": "receive a response",
+            "keyword": "Then ",
+            "line": 31,
+            "name": "I receive a response",
             "match": {
-              "location": "features\\support\\steps.js:46"
+              "location": "features\\support\\steps.js:47"
             },
             "result": {
               "status": "passed",
-              "duration": 343000000
+              "duration": 215000000
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
-            "line": 35,
-            "name": "I expect response should have a status 200",
+            "keyword": "And ",
+            "line": 32,
+            "name": "response status is 200",
             "match": {
-              "location": "features\\support\\steps.js:50"
+              "location": "features\\support\\steps.js:51"
             },
             "result": {
               "status": "passed",
@@ -191,14 +191,14 @@
             "arguments": [
               {
                 "content": "{\n  \"page\": 2\n}",
-                "line": 37
+                "line": 34
               }
             ],
             "keyword": "And ",
-            "line": 36,
+            "line": 33,
             "name": "I expect response should have a json like",
             "match": {
-              "location": "features\\support\\steps.js:70"
+              "location": "features\\support\\steps.js:71"
             },
             "result": {
               "status": "passed",
@@ -209,31 +209,31 @@
             "arguments": [
               {
                 "content": "{\n  \"type\": \"object\",\n  \"properties\": {\n    \"page\": {\n      \"type\": \"number\"\n    }\n  }\n}",
-                "line": 43
+                "line": 40
               }
             ],
             "keyword": "And ",
-            "line": 42,
+            "line": 39,
             "name": "I expect response should have a json schema",
             "match": {
-              "location": "features\\support\\steps.js:78"
+              "location": "features\\support\\steps.js:79"
             },
             "result": {
               "status": "passed",
-              "duration": 22000000
+              "duration": 18000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 53,
+            "line": 50,
             "name": "I store response at data[0].id as UserId",
             "match": {
-              "location": "features\\support\\steps.js:94"
+              "location": "features\\support\\steps.js:95"
             },
             "result": {
               "status": "passed",
-              "duration": 3000000
+              "duration": 2000000
             }
           },
           {
@@ -241,7 +241,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           }
         ],
@@ -252,7 +252,7 @@
         "description": "",
         "id": "regres;get-a-user-with-id",
         "keyword": "Scenario",
-        "line": 55,
+        "line": 52,
         "name": "Get A User With Id",
         "steps": [
           {
@@ -273,11 +273,50 @@
           },
           {
             "arguments": [],
-            "keyword": "Given ",
-            "line": 56,
-            "name": "Make a GET request to /api/users/{id}",
+            "keyword": "When ",
+            "line": 53,
+            "name": "I make a GET request to /api/users/{id}",
+            "match": {
+              "location": "features\\support\\steps.js:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 54,
+            "name": "I set path parameter: id in URL with value: $S{UserId}",
             "match": {
               "location": "features\\support\\steps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 55,
+            "name": "I receive a response",
+            "match": {
+              "location": "features\\support\\steps.js:47"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 144000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 56,
+            "name": "response status is 200",
+            "match": {
+              "location": "features\\support\\steps.js:51"
             },
             "result": {
               "status": "passed",
@@ -288,9 +327,9 @@
             "arguments": [],
             "keyword": "And ",
             "line": 57,
-            "name": "I set path param id to $S{UserId}",
+            "name": "response header content-type is application/json; charset=utf-8",
             "match": {
-              "location": "features\\support\\steps.js:18"
+              "location": "features\\support\\steps.js:55"
             },
             "result": {
               "status": "passed",
@@ -298,60 +337,21 @@
             }
           },
           {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 58,
-            "name": "receive a response",
-            "match": {
-              "location": "features\\support\\steps.js:46"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 269000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 59,
-            "name": "I expect response should have a status 200",
-            "match": {
-              "location": "features\\support\\steps.js:50"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 60,
-            "name": "I expect response header content-type should have application/json; charset=utf-8",
-            "match": {
-              "location": "features\\support\\steps.js:58"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1000000
-            }
-          },
-          {
             "arguments": [
               {
                 "content": "{\n  \"data\": {\n    \"id\": 7\n  }\n}",
-                "line": 62
+                "line": 59
               }
             ],
             "keyword": "And ",
-            "line": 61,
+            "line": 58,
             "name": "I expect response should have a json like",
             "match": {
-              "location": "features\\support\\steps.js:70"
+              "location": "features\\support\\steps.js:71"
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -370,7 +370,7 @@
         "description": "",
         "id": "regres;create-a-user",
         "keyword": "Scenario",
-        "line": 70,
+        "line": 67,
         "name": "Create A User",
         "steps": [
           {
@@ -391,11 +391,11 @@
           },
           {
             "arguments": [],
-            "keyword": "Given ",
-            "line": 71,
-            "name": "Make a POST request to /api/users",
+            "keyword": "When ",
+            "line": 68,
+            "name": "I make a POST request to /api/users",
             "match": {
-              "location": "features\\support\\steps.js:10"
+              "location": "features\\support\\steps.js:34"
             },
             "result": {
               "status": "passed",
@@ -406,44 +406,45 @@
             "arguments": [
               {
                 "content": "{\n  \"name\": \"morpheus\",\n  \"job\": \"leader\"\n}",
-                "line": 73
+                "line": 70
               }
             ],
             "keyword": "And ",
-            "line": 72,
-            "name": "I set body to",
+            "line": 69,
+            "name": "I set body to:",
             "match": {
-              "location": "features\\support\\steps.js:34"
+              "location": "features\\support\\steps.js:43"
             },
             "result": {
               "status": "passed",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 79,
-            "name": "receive a response",
-            "match": {
-              "location": "features\\support\\steps.js:46"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 299000000
+              "duration": 1000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 80,
-            "name": "I expect response should have a status 201",
+            "line": 76,
+            "name": "I receive a response",
             "match": {
-              "location": "features\\support\\steps.js:50"
+              "location": "features\\support\\steps.js:47"
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 199000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 77,
+            "name": "response status is 201",
+            "match": {
+              "location": "features\\support\\steps.js:51"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 15000000,
+              "error_message": "AssertionError [ERR_ASSERTION]: HTTP status 503 !== 201\n    + expected - actual\n\n    -503\n    +201\n\n    at Expect._validateStatus (C:\\Users\\vlade\\Desktop\\Projects\\BDD_Rest_Api_Testing\\node_modules\\pactum\\src\\models\\expect.js:100:14)\n    at Expect.validate (C:\\Users\\vlade\\Desktop\\Projects\\BDD_Rest_Api_Testing\\node_modules\\pactum\\src\\models\\expect.js:45:10)\n    at Have._validate (C:\\Users\\vlade\\Desktop\\Projects\\BDD_Rest_Api_Testing\\node_modules\\pactum\\src\\exports\\expect.js:106:26)\n    at Have.status (C:\\Users\\vlade\\Desktop\\Projects\\BDD_Rest_Api_Testing\\node_modules\\pactum\\src\\exports\\expect.js:14:10)\n    at World.<anonymous> (C:\\Users\\vlade\\Desktop\\Projects\\BDD_Rest_Api_Testing\\features\\support\\steps.js:52:31)"
             }
           },
           {
@@ -462,7 +463,7 @@
         "description": "",
         "id": "regres;take-a-list-of-users",
         "keyword": "Scenario",
-        "line": 82,
+        "line": 79,
         "name": "Take a list of users",
         "steps": [
           {
@@ -483,11 +484,11 @@
           },
           {
             "arguments": [],
-            "keyword": "Given ",
-            "line": 83,
-            "name": "Make a GET request to /api/users?page=2",
+            "keyword": "When ",
+            "line": 80,
+            "name": "I make a GET request to /api/users?page=2",
             "match": {
-              "location": "features\\support\\steps.js:10"
+              "location": "features\\support\\steps.js:34"
             },
             "result": {
               "status": "passed",
@@ -496,24 +497,24 @@
           },
           {
             "arguments": [],
-            "keyword": "When ",
-            "line": 84,
-            "name": "receive a response",
+            "keyword": "Then ",
+            "line": 81,
+            "name": "I receive a response",
             "match": {
-              "location": "features\\support\\steps.js:46"
+              "location": "features\\support\\steps.js:47"
             },
             "result": {
               "status": "passed",
-              "duration": 287000000
+              "duration": 168000000
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
-            "line": 85,
-            "name": "I expect response should have a status 200",
+            "keyword": "And ",
+            "line": 82,
+            "name": "response status is 200",
             "match": {
-              "location": "features\\support\\steps.js:50"
+              "location": "features\\support\\steps.js:51"
             },
             "result": {
               "status": "passed",
@@ -524,14 +525,14 @@
             "arguments": [
               {
                 "content": "{\n   \"support\": {\n   \"url\": \"https://reqres.in/#support-heading\",\n   \"text\": \"To keep ReqRes free, contributions towards server costs are appreciated!\"\n}\n}",
-                "line": 87
+                "line": 84
               }
             ],
             "keyword": "And ",
-            "line": 86,
+            "line": 83,
             "name": "I expect response should have a json like",
             "match": {
-              "location": "features\\support\\steps.js:70"
+              "location": "features\\support\\steps.js:71"
             },
             "result": {
               "status": "passed",
@@ -563,6 +564,96 @@
     "elements": [
       {
         "description": "",
+        "id": "pivot;login-user",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Login user",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [
+              {
+                "content": "{\n  \"name\": \"morpheus\",\n  \"job\": \"leader\"\n}",
+                "line": 5
+              }
+            ],
+            "keyword": "When ",
+            "line": 4,
+            "name": "I make a POST request with body to /api/users",
+            "match": {
+              "location": "features\\support\\steps.js:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I receive a response",
+            "match": {
+              "location": "features\\support\\steps.js:47"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 321000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "response status is 201",
+            "match": {
+              "location": "features\\support\\steps.js:51"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "pivot",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Pivot",
+    "tags": [],
+    "uri": "features\\Upshift.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
         "id": "users;create-user",
         "keyword": "Scenario",
         "line": 3,
@@ -586,15 +677,15 @@
           },
           {
             "arguments": [],
-            "keyword": "Given ",
+            "keyword": "When ",
             "line": 4,
-            "name": "Make a POST request to /api/users",
+            "name": "I make a POST request to /api/users",
             "match": {
-              "location": "features\\support\\steps.js:10"
+              "location": "features\\support\\steps.js:34"
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -606,9 +697,9 @@
             ],
             "keyword": "And ",
             "line": 5,
-            "name": "I set body to",
+            "name": "I set body to:",
             "match": {
-              "location": "features\\support\\steps.js:34"
+              "location": "features\\support\\steps.js:43"
             },
             "result": {
               "status": "passed",
@@ -617,24 +708,24 @@
           },
           {
             "arguments": [],
-            "keyword": "When ",
+            "keyword": "Then ",
             "line": 12,
-            "name": "receive a response",
+            "name": "I receive a response",
             "match": {
-              "location": "features\\support\\steps.js:46"
+              "location": "features\\support\\steps.js:47"
             },
             "result": {
               "status": "passed",
-              "duration": 405000000
+              "duration": 214000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 13,
-            "name": "I expect response should have a status 201",
+            "name": "response status is 201",
             "match": {
-              "location": "features\\support\\steps.js:50"
+              "location": "features\\support\\steps.js:51"
             },
             "result": {
               "status": "passed",
@@ -646,7 +737,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           }
         ],
