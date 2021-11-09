@@ -3,5 +3,5 @@ const { Before } = require('@cucumber/cucumber');
 
 Before(() => {
   request.setBaseUrl('https://reqres.in');
-  settings.setReporterAutoRun(false);
+  settings.setLogLevel('DEBUG');
 });

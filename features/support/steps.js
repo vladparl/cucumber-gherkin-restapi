@@ -6,6 +6,7 @@ let spec = pactum.spec();
 
 Before(() => {
   spec = pactum.spec();
+  spec.withRequestTimeout(5000);
 });
 
 Given(/^baseURL is (.*)$/, function (baseURL) {
@@ -99,6 +100,10 @@ Then('response should have {string}', function (handler) {
 
 Then(/^store response (.*) in (.*)$/, function (path, name) {
   spec.stores(name, path);
+});
+
+Then(/^request completes within a specified duration of (.*)$/, function (miliseconds) {
+  spec.expectResponseTime(miliseconds);
 });
 
 After(() => {

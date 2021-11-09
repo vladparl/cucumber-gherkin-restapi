@@ -31,11 +31,11 @@
             "line": 4,
             "name": "make a GET request to /api/users/1",
             "match": {
-              "location": "features\\support\\steps.js:39"
+              "location": "features\\support\\steps.js:40"
             },
             "result": {
               "status": "passed",
-              "duration": 2000000
+              "duration": 1000000
             }
           },
           {
@@ -44,11 +44,11 @@
             "line": 5,
             "name": "response is received",
             "match": {
-              "location": "features\\support\\steps.js:52"
+              "location": "features\\support\\steps.js:53"
             },
             "result": {
               "status": "passed",
-              "duration": 1799000000
+              "duration": 390000000
             }
           },
           {
@@ -57,11 +57,11 @@
             "line": 6,
             "name": "response status is 200",
             "match": {
-              "location": "features\\support\\steps.js:56"
+              "location": "features\\support\\steps.js:57"
             },
             "result": {
               "status": "passed",
-              "duration": 3000000
+              "duration": 2000000
             }
           },
           {
@@ -75,11 +75,11 @@
             "line": 7,
             "name": "response should have a json at data",
             "match": {
-              "location": "features\\support\\steps.js:72"
+              "location": "features\\support\\steps.js:74"
             },
             "result": {
               "status": "passed",
-              "duration": 7000000
+              "duration": 4000000
             }
           },
           {
@@ -93,11 +93,11 @@
             "line": 17,
             "name": "response should have a json like",
             "match": {
-              "location": "features\\support\\steps.js:76"
+              "location": "features\\support\\steps.js:78"
             },
             "result": {
               "status": "passed",
-              "duration": 2000000
+              "duration": 1000000
             }
           },
           {
@@ -132,7 +132,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
@@ -141,11 +141,11 @@
             "line": 29,
             "name": "make a GET request to /api/users",
             "match": {
-              "location": "features\\support\\steps.js:39"
+              "location": "features\\support\\steps.js:40"
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -154,11 +154,11 @@
             "line": 30,
             "name": "set query parameter: page with value: 2",
             "match": {
-              "location": "features\\support\\steps.js:19"
+              "location": "features\\support\\steps.js:20"
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -167,11 +167,11 @@
             "line": 31,
             "name": "response is received",
             "match": {
-              "location": "features\\support\\steps.js:52"
+              "location": "features\\support\\steps.js:53"
             },
             "result": {
               "status": "passed",
-              "duration": 277000000
+              "duration": 280000000
             }
           },
           {
@@ -180,7 +180,7 @@
             "line": 32,
             "name": "response status is 200",
             "match": {
-              "location": "features\\support\\steps.js:56"
+              "location": "features\\support\\steps.js:57"
             },
             "result": {
               "status": "passed",
@@ -198,7 +198,7 @@
             "line": 33,
             "name": "response should have a json like",
             "match": {
-              "location": "features\\support\\steps.js:76"
+              "location": "features\\support\\steps.js:78"
             },
             "result": {
               "status": "passed",
@@ -216,11 +216,11 @@
             "line": 39,
             "name": "response should have a json schema",
             "match": {
-              "location": "features\\support\\steps.js:84"
+              "location": "features\\support\\steps.js:86"
             },
             "result": {
               "status": "passed",
-              "duration": 21000000
+              "duration": 22000000
             }
           },
           {
@@ -229,7 +229,7 @@
             "line": 50,
             "name": "store response data[0].id in UserId",
             "match": {
-              "location": "features\\support\\steps.js:100"
+              "location": "features\\support\\steps.js:102"
             },
             "result": {
               "status": "passed",
@@ -277,7 +277,7 @@
             "line": 53,
             "name": "make a GET request to /api/users/{id}",
             "match": {
-              "location": "features\\support\\steps.js:39"
+              "location": "features\\support\\steps.js:40"
             },
             "result": {
               "status": "passed",
@@ -290,7 +290,7 @@
             "line": 54,
             "name": "set path parameter: id in URL with value: $S{UserId}",
             "match": {
-              "location": "features\\support\\steps.js:15"
+              "location": "features\\support\\steps.js:16"
             },
             "result": {
               "status": "passed",
@@ -303,11 +303,11 @@
             "line": 55,
             "name": "response is received",
             "match": {
-              "location": "features\\support\\steps.js:52"
+              "location": "features\\support\\steps.js:53"
             },
             "result": {
               "status": "passed",
-              "duration": 371000000
+              "duration": 267000000
             }
           },
           {
@@ -316,7 +316,7 @@
             "line": 56,
             "name": "response status is 200",
             "match": {
-              "location": "features\\support\\steps.js:56"
+              "location": "features\\support\\steps.js:57"
             },
             "result": {
               "status": "passed",
@@ -329,7 +329,7 @@
             "line": 57,
             "name": "response header content-type is application/json; charset=utf-8",
             "match": {
-              "location": "features\\support\\steps.js:60"
+              "location": "features\\support\\steps.js:62"
             },
             "result": {
               "status": "passed",
@@ -347,7 +347,7 @@
             "line": 58,
             "name": "response should have a json like",
             "match": {
-              "location": "features\\support\\steps.js:76"
+              "location": "features\\support\\steps.js:78"
             },
             "result": {
               "status": "passed",
@@ -359,7 +359,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           }
         ],
@@ -395,7 +395,7 @@
             "line": 68,
             "name": "make a POST request to /api/users",
             "match": {
-              "location": "features\\support\\steps.js:39"
+              "location": "features\\support\\steps.js:40"
             },
             "result": {
               "status": "passed",
@@ -413,7 +413,7 @@
             "line": 69,
             "name": "set body to:",
             "match": {
-              "location": "features\\support\\steps.js:48"
+              "location": "features\\support\\steps.js:49"
             },
             "result": {
               "status": "passed",
@@ -426,11 +426,11 @@
             "line": 76,
             "name": "response is received",
             "match": {
-              "location": "features\\support\\steps.js:52"
+              "location": "features\\support\\steps.js:53"
             },
             "result": {
               "status": "passed",
-              "duration": 493000000
+              "duration": 321000000
             }
           },
           {
@@ -439,11 +439,11 @@
             "line": 77,
             "name": "response status is 201",
             "match": {
-              "location": "features\\support\\steps.js:56"
+              "location": "features\\support\\steps.js:57"
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
@@ -478,7 +478,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -487,7 +487,7 @@
             "line": 80,
             "name": "make a GET request to /api/users?page=2",
             "match": {
-              "location": "features\\support\\steps.js:39"
+              "location": "features\\support\\steps.js:40"
             },
             "result": {
               "status": "passed",
@@ -500,11 +500,11 @@
             "line": 81,
             "name": "response is received",
             "match": {
-              "location": "features\\support\\steps.js:52"
+              "location": "features\\support\\steps.js:53"
             },
             "result": {
               "status": "passed",
-              "duration": 297000000
+              "duration": 273000000
             }
           },
           {
@@ -513,7 +513,7 @@
             "line": 82,
             "name": "response status is 200",
             "match": {
-              "location": "features\\support\\steps.js:56"
+              "location": "features\\support\\steps.js:57"
             },
             "result": {
               "status": "passed",
@@ -531,11 +531,11 @@
             "line": 83,
             "name": "response should have a json like",
             "match": {
-              "location": "features\\support\\steps.js:76"
+              "location": "features\\support\\steps.js:78"
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
@@ -579,11 +579,11 @@
             "line": 94,
             "name": "baseURL is https://reqres.in",
             "match": {
-              "location": "features\\support\\steps.js:11"
+              "location": "features\\support\\steps.js:12"
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
@@ -597,7 +597,7 @@
             "line": 95,
             "name": "make a POST request with body to /api/register",
             "match": {
-              "location": "features\\support\\steps.js:43"
+              "location": "features\\support\\steps.js:44"
             },
             "result": {
               "status": "passed",
@@ -610,11 +610,11 @@
             "line": 101,
             "name": "response is received",
             "match": {
-              "location": "features\\support\\steps.js:52"
+              "location": "features\\support\\steps.js:53"
             },
             "result": {
               "status": "passed",
-              "duration": 395000000
+              "duration": 318000000
             }
           },
           {
@@ -623,7 +623,7 @@
             "line": 102,
             "name": "response status is 400",
             "match": {
-              "location": "features\\support\\steps.js:56"
+              "location": "features\\support\\steps.js:57"
             },
             "result": {
               "status": "passed",
@@ -671,11 +671,11 @@
             "line": 105,
             "name": "make a GET request to /api/users?page=2",
             "match": {
-              "location": "features\\support\\steps.js:39"
+              "location": "features\\support\\steps.js:40"
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -684,11 +684,11 @@
             "line": 106,
             "name": "response is received",
             "match": {
-              "location": "features\\support\\steps.js:52"
+              "location": "features\\support\\steps.js:53"
             },
             "result": {
               "status": "passed",
-              "duration": 296000000
+              "duration": 273000000
             }
           },
           {
@@ -697,7 +697,7 @@
             "line": 107,
             "name": "response status is 200",
             "match": {
-              "location": "features\\support\\steps.js:56"
+              "location": "features\\support\\steps.js:57"
             },
             "result": {
               "status": "passed",
@@ -715,11 +715,11 @@
             "line": 108,
             "name": "response should have a json like",
             "match": {
-              "location": "features\\support\\steps.js:76"
+              "location": "features\\support\\steps.js:78"
             },
             "result": {
               "status": "passed",
-              "duration": 2000000
+              "duration": 1000000
             }
           },
           {
@@ -728,7 +728,7 @@
             "line": 165,
             "name": "store response data[0].id in id",
             "match": {
-              "location": "features\\support\\steps.js:100"
+              "location": "features\\support\\steps.js:102"
             },
             "result": {
               "status": "passed",
@@ -776,7 +776,7 @@
             "line": 169,
             "name": "make a GET request to /api/users/$S{id}",
             "match": {
-              "location": "features\\support\\steps.js:39"
+              "location": "features\\support\\steps.js:40"
             },
             "result": {
               "status": "passed",
@@ -785,28 +785,38 @@
           },
           {
             "arguments": [],
-            "keyword": "Then ",
+            "keyword": "And ",
             "line": 170,
+            "name": "wait 3000",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 171,
             "name": "response is received",
             "match": {
-              "location": "features\\support\\steps.js:52"
+              "location": "features\\support\\steps.js:53"
             },
             "result": {
-              "status": "passed",
-              "duration": 295000000
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 171,
+            "line": 172,
             "name": "response status is 200",
             "match": {
-              "location": "features\\support\\steps.js:56"
+              "location": "features\\support\\steps.js:57"
             },
             "result": {
-              "status": "passed",
-              "duration": 1000000
+              "status": "skipped",
+              "duration": 0
             }
           },
           {
@@ -866,11 +876,11 @@
             "line": 4,
             "name": "make a POST request with body to /api/users",
             "match": {
-              "location": "features\\support\\steps.js:43"
+              "location": "features\\support\\steps.js:44"
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -879,11 +889,11 @@
             "line": 11,
             "name": "response is received",
             "match": {
-              "location": "features\\support\\steps.js:52"
+              "location": "features\\support\\steps.js:53"
             },
             "result": {
               "status": "passed",
-              "duration": 319000000
+              "duration": 322000000
             }
           },
           {
@@ -892,11 +902,11 @@
             "line": 12,
             "name": "response status is 201",
             "match": {
-              "location": "features\\support\\steps.js:56"
+              "location": "features\\support\\steps.js:57"
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -940,11 +950,11 @@
             "line": 15,
             "name": "baseURL is https://dog.ceo",
             "match": {
-              "location": "features\\support\\steps.js:11"
+              "location": "features\\support\\steps.js:12"
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
@@ -953,7 +963,7 @@
             "line": 16,
             "name": "make a GET request to /api/breeds/image/random",
             "match": {
-              "location": "features\\support\\steps.js:39"
+              "location": "features\\support\\steps.js:40"
             },
             "result": {
               "status": "passed",
@@ -966,11 +976,11 @@
             "line": 17,
             "name": "response is received",
             "match": {
-              "location": "features\\support\\steps.js:52"
+              "location": "features\\support\\steps.js:53"
             },
             "result": {
               "status": "passed",
-              "duration": 280000000
+              "duration": 269000000
             }
           },
           {
@@ -1025,11 +1035,11 @@
             "line": 4,
             "name": "make a POST request to /api/users",
             "match": {
-              "location": "features\\support\\steps.js:39"
+              "location": "features\\support\\steps.js:40"
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -1043,7 +1053,7 @@
             "line": 5,
             "name": "set body to:",
             "match": {
-              "location": "features\\support\\steps.js:48"
+              "location": "features\\support\\steps.js:49"
             },
             "result": {
               "status": "passed",
@@ -1056,11 +1066,11 @@
             "line": 12,
             "name": "response is received",
             "match": {
-              "location": "features\\support\\steps.js:52"
+              "location": "features\\support\\steps.js:53"
             },
             "result": {
               "status": "passed",
-              "duration": 1416000000
+              "duration": 308000000
             }
           },
           {
@@ -1069,11 +1079,11 @@
             "line": 13,
             "name": "response status is 201",
             "match": {
-              "location": "features\\support\\steps.js:56"
+              "location": "features\\support\\steps.js:57"
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
