@@ -35,20 +35,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 2000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 5,
-            "name": "receive a response",
+            "name": "response is received",
             "match": {
               "location": "features\\support\\steps.js:52"
             },
             "result": {
               "status": "passed",
-              "duration": 512000000
+              "duration": 1799000000
             }
           },
           {
@@ -79,7 +79,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4000000
+              "duration": 7000000
             }
           },
           {
@@ -97,7 +97,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 2000000
             }
           },
           {
@@ -105,7 +105,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           }
         ],
@@ -124,7 +124,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -145,7 +145,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
@@ -165,13 +165,13 @@
             "arguments": [],
             "keyword": "Then ",
             "line": 31,
-            "name": "receive a response",
+            "name": "response is received",
             "match": {
               "location": "features\\support\\steps.js:52"
             },
             "result": {
               "status": "passed",
-              "duration": 484000000
+              "duration": 277000000
             }
           },
           {
@@ -220,7 +220,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 23000000
+              "duration": 21000000
             }
           },
           {
@@ -233,7 +233,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3000000
+              "duration": 2000000
             }
           },
           {
@@ -281,7 +281,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -301,13 +301,13 @@
             "arguments": [],
             "keyword": "Then ",
             "line": 55,
-            "name": "receive a response",
+            "name": "response is received",
             "match": {
               "location": "features\\support\\steps.js:52"
             },
             "result": {
               "status": "passed",
-              "duration": 266000000
+              "duration": 371000000
             }
           },
           {
@@ -417,20 +417,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 76,
-            "name": "receive a response",
+            "name": "response is received",
             "match": {
               "location": "features\\support\\steps.js:52"
             },
             "result": {
               "status": "passed",
-              "duration": 490000000
+              "duration": 493000000
             }
           },
           {
@@ -443,7 +443,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -451,7 +451,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           }
         ],
@@ -478,7 +478,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
@@ -491,20 +491,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 81,
-            "name": "receive a response",
+            "name": "response is received",
             "match": {
               "location": "features\\support\\steps.js:52"
             },
             "result": {
               "status": "passed",
-              "duration": 296000000
+              "duration": 297000000
             }
           },
           {
@@ -532,6 +532,277 @@
             "name": "response should have a json like",
             "match": {
               "location": "features\\support\\steps.js:76"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "regres;login-with-invalid-password-returns-400",
+        "keyword": "Scenario",
+        "line": 93,
+        "name": "Login with invalid password returns 400",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 94,
+            "name": "baseURL is https://reqres.in",
+            "match": {
+              "location": "features\\support\\steps.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [
+              {
+                "content": "{\n  \"email\": test@user.com \n}",
+                "line": 96
+              }
+            ],
+            "keyword": "And ",
+            "line": 95,
+            "name": "make a POST request with body to /api/register",
+            "match": {
+              "location": "features\\support\\steps.js:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 101,
+            "name": "response is received",
+            "match": {
+              "location": "features\\support\\steps.js:52"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 395000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 102,
+            "name": "response status is 400",
+            "match": {
+              "location": "features\\support\\steps.js:56"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "regres;get-a-list-of-all-users",
+        "keyword": "Scenario",
+        "line": 104,
+        "name": "Get a list of all users",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 105,
+            "name": "make a GET request to /api/users?page=2",
+            "match": {
+              "location": "features\\support\\steps.js:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 106,
+            "name": "response is received",
+            "match": {
+              "location": "features\\support\\steps.js:52"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 296000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 107,
+            "name": "response status is 200",
+            "match": {
+              "location": "features\\support\\steps.js:56"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "content": "{\n\"page\": 2,\n\"per_page\": 6,\n\"total\": 12,\n\"total_pages\": 2,\n\"data\": [\n  {\n      \"id\": 7,\n      \"email\": \"michael.lawson@reqres.in\",\n      \"first_name\": \"Michael\",\n      \"last_name\": \"Lawson\",\n      \"avatar\": \"https://reqres.in/img/faces/7-image.jpg\"\n  },\n  {\n      \"id\": 8,\n      \"email\": \"lindsay.ferguson@reqres.in\",\n      \"first_name\": \"Lindsay\",\n      \"last_name\": \"Ferguson\",\n      \"avatar\": \"https://reqres.in/img/faces/8-image.jpg\"\n  },\n  {\n      \"id\": 9,\n      \"email\": \"tobias.funke@reqres.in\",\n      \"first_name\": \"Tobias\",\n      \"last_name\": \"Funke\",\n      \"avatar\": \"https://reqres.in/img/faces/9-image.jpg\"\n  },\n  {\n      \"id\": 10,\n      \"email\": \"byron.fields@reqres.in\",\n      \"first_name\": \"Byron\",\n      \"last_name\": \"Fields\",\n      \"avatar\": \"https://reqres.in/img/faces/10-image.jpg\"\n  },\n  {\n      \"id\": 11,\n      \"email\": \"george.edwards@reqres.in\",\n      \"first_name\": \"George\",\n      \"last_name\": \"Edwards\",\n      \"avatar\": \"https://reqres.in/img/faces/11-image.jpg\"\n  },\n  {\n      \"id\": 12,\n      \"email\": \"rachel.howell@reqres.in\",\n      \"first_name\": \"Rachel\",\n      \"last_name\": \"Howell\",\n      \"avatar\": \"https://reqres.in/img/faces/12-image.jpg\"\n  }\n],\n\"support\": {\n  \"url\": \"https://reqres.in/#support-heading\",\n  \"text\": \"To keep ReqRes free, contributions towards server costs are appreciated!\"\n}\n}",
+                "line": 109
+              }
+            ],
+            "keyword": "And ",
+            "line": 108,
+            "name": "response should have a json like",
+            "match": {
+              "location": "features\\support\\steps.js:76"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 165,
+            "name": "store response data[0].id in id",
+            "match": {
+              "location": "features\\support\\steps.js:100"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "regres;pass-stored-value-in-get-response",
+        "keyword": "Scenario",
+        "line": 167,
+        "name": "Pass stored value in GET response",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 169,
+            "name": "make a GET request to /api/users/$S{id}",
+            "match": {
+              "location": "features\\support\\steps.js:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 170,
+            "name": "response is received",
+            "match": {
+              "location": "features\\support\\steps.js:52"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 295000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 171,
+            "name": "response status is 200",
+            "match": {
+              "location": "features\\support\\steps.js:56"
             },
             "result": {
               "status": "passed",
@@ -563,7 +834,7 @@
     "elements": [
       {
         "description": "",
-        "id": "pivot;login-user",
+        "id": "upshift;login-user",
         "keyword": "Scenario",
         "line": 3,
         "name": "Login user",
@@ -606,13 +877,13 @@
             "arguments": [],
             "keyword": "Then ",
             "line": 11,
-            "name": "receive a response",
+            "name": "response is received",
             "match": {
               "location": "features\\support\\steps.js:52"
             },
             "result": {
               "status": "passed",
-              "duration": 394000000
+              "duration": 319000000
             }
           },
           {
@@ -642,7 +913,7 @@
       },
       {
         "description": "",
-        "id": "pivot;login-user",
+        "id": "upshift;login-user",
         "keyword": "Scenario",
         "line": 14,
         "name": "Login user",
@@ -693,13 +964,13 @@
             "arguments": [],
             "keyword": "Then ",
             "line": 17,
-            "name": "receive a response",
+            "name": "response is received",
             "match": {
               "location": "features\\support\\steps.js:52"
             },
             "result": {
               "status": "passed",
-              "duration": 419000000
+              "duration": 280000000
             }
           },
           {
@@ -715,10 +986,10 @@
         "type": "scenario"
       }
     ],
-    "id": "pivot",
+    "id": "upshift",
     "line": 1,
     "keyword": "Feature",
-    "name": "Pivot",
+    "name": "Upshift",
     "tags": [],
     "uri": "features\\Upshift.feature"
   },
@@ -737,7 +1008,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -758,7 +1029,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
@@ -783,13 +1054,13 @@
             "arguments": [],
             "keyword": "Then ",
             "line": 12,
-            "name": "receive a response",
+            "name": "response is received",
             "match": {
               "location": "features\\support\\steps.js:52"
             },
             "result": {
               "status": "passed",
-              "duration": 474000000
+              "duration": 1416000000
             }
           },
           {

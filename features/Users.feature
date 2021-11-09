@@ -9,5 +9,5 @@ Scenario: Create user
     "job": "user"
     }
     """
-    Then receive a response
+    Then response is received
     Then response status is 201

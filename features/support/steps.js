@@ -49,7 +49,7 @@ When(/set body to:/, function (body) {
   spec.withBody(body);
 });
 
-Then('receive a response', async function () {
+Then('response is received', async function () {
   await spec.toss();
 });
 
