@@ -4,6 +4,342 @@
     "elements": [
       {
         "description": "",
+        "id": "authentication;login-with-valid-username-and-password",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Login with valid username and password",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "base URL is https://api.test.pivotenergy.com",
+            "match": {
+              "location": "features\\support\\steps.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "content": "{\n    \"username\": \"admin@nwh.com\",\n    \"password\": \"9ceBABfA7G-g42k\"\n}       ",
+                "line": 6
+              }
+            ],
+            "keyword": "When ",
+            "line": 5,
+            "name": "make a POST request with body to /auth/login",
+            "match": {
+              "location": "features\\support\\steps.js:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "response is received",
+            "match": {
+              "location": "features\\support\\steps.js:53"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1424000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "response status is 200",
+            "match": {
+              "location": "features\\support\\steps.js:57"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "response body contains idToken",
+            "match": {
+              "location": "features\\support\\steps.js:69"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "authentication;login-with-invalid-username",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "Login with invalid username",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 17,
+            "name": "base URL is https://api.test.pivotenergy.com",
+            "match": {
+              "location": "features\\support\\steps.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "content": "{\n    \"username\": \"invalid@nwh.com\",\n    \"password\": \"9ceBABfA7G-g42k\"\n}       ",
+                "line": 19
+              }
+            ],
+            "keyword": "When ",
+            "line": 18,
+            "name": "make a POST request with body to /auth/login",
+            "match": {
+              "location": "features\\support\\steps.js:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "response is received",
+            "match": {
+              "location": "features\\support\\steps.js:53"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1084000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "response status is 401",
+            "match": {
+              "location": "features\\support\\steps.js:57"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "content": "{\n    \"code\": \"USER_NOT_FOUND\",\n    \"message\": \"User does not exist\",\n    \"statusCode\": 401\n}",
+                "line": 28
+              }
+            ],
+            "keyword": "And ",
+            "line": 27,
+            "name": "response have a json",
+            "match": {
+              "location": "features\\support\\steps.js:73"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "authentication;login-with-invalid-password",
+        "keyword": "Scenario",
+        "line": 36,
+        "name": "Login with invalid password",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 37,
+            "name": "base URL is https://api.test.pivotenergy.com",
+            "match": {
+              "location": "features\\support\\steps.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "content": "{\n    \"username\": \"admin@nwh.com\",\n    \"password\": \"invalid\"\n}       ",
+                "line": 39
+              }
+            ],
+            "keyword": "When ",
+            "line": 38,
+            "name": "make a POST request with body to /auth/login",
+            "match": {
+              "location": "features\\support\\steps.js:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 45,
+            "name": "response is received",
+            "match": {
+              "location": "features\\support\\steps.js:53"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1295000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 46,
+            "name": "response status is 401",
+            "match": {
+              "location": "features\\support\\steps.js:57"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "content": "{\n    \"code\": \"WRONG_CREDENTIALS\",\n    \"message\": \"Incorrect username or password\",\n    \"statusCode\": 401\n}",
+                "line": 48
+              }
+            ],
+            "keyword": "And ",
+            "line": 47,
+            "name": "response have a json",
+            "match": {
+              "location": "features\\support\\steps.js:73"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "authentication",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Authentication",
+    "tags": [],
+    "uri": "features\\PivotLogin.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
         "id": "regres;get-a-user",
         "keyword": "Scenario",
         "line": 3,
@@ -14,7 +350,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -48,7 +384,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 390000000
+              "duration": 398000000
             }
           },
           {
@@ -61,7 +397,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2000000
+              "duration": 1000000
             }
           },
           {
@@ -75,11 +411,11 @@
             "line": 7,
             "name": "response should have a json at data",
             "match": {
-              "location": "features\\support\\steps.js:74"
+              "location": "features\\support\\steps.js:77"
             },
             "result": {
               "status": "passed",
-              "duration": 4000000
+              "duration": 3000000
             }
           },
           {
@@ -93,7 +429,7 @@
             "line": 17,
             "name": "response should have a json like",
             "match": {
-              "location": "features\\support\\steps.js:78"
+              "location": "features\\support\\steps.js:81"
             },
             "result": {
               "status": "passed",
@@ -105,7 +441,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           }
         ],
@@ -158,7 +494,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
@@ -171,7 +507,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 280000000
+              "duration": 290000000
             }
           },
           {
@@ -198,7 +534,7 @@
             "line": 33,
             "name": "response should have a json like",
             "match": {
-              "location": "features\\support\\steps.js:78"
+              "location": "features\\support\\steps.js:81"
             },
             "result": {
               "status": "passed",
@@ -216,11 +552,11 @@
             "line": 39,
             "name": "response should have a json schema",
             "match": {
-              "location": "features\\support\\steps.js:86"
+              "location": "features\\support\\steps.js:89"
             },
             "result": {
               "status": "passed",
-              "duration": 22000000
+              "duration": 21000000
             }
           },
           {
@@ -229,7 +565,7 @@
             "line": 50,
             "name": "store response data[0].id in UserId",
             "match": {
-              "location": "features\\support\\steps.js:102"
+              "location": "features\\support\\steps.js:105"
             },
             "result": {
               "status": "passed",
@@ -281,7 +617,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
@@ -294,7 +630,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
@@ -307,7 +643,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 267000000
+              "duration": 170000000
             }
           },
           {
@@ -329,7 +665,7 @@
             "line": 57,
             "name": "response header content-type is application/json; charset=utf-8",
             "match": {
-              "location": "features\\support\\steps.js:62"
+              "location": "features\\support\\steps.js:61"
             },
             "result": {
               "status": "passed",
@@ -347,7 +683,7 @@
             "line": 58,
             "name": "response should have a json like",
             "match": {
-              "location": "features\\support\\steps.js:78"
+              "location": "features\\support\\steps.js:81"
             },
             "result": {
               "status": "passed",
@@ -359,7 +695,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           }
         ],
@@ -417,7 +753,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
@@ -430,7 +766,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 321000000
+              "duration": 295000000
             }
           },
           {
@@ -504,7 +840,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 273000000
+              "duration": 297000000
             }
           },
           {
@@ -531,7 +867,7 @@
             "line": 83,
             "name": "response should have a json like",
             "match": {
-              "location": "features\\support\\steps.js:78"
+              "location": "features\\support\\steps.js:81"
             },
             "result": {
               "status": "passed",
@@ -577,7 +913,7 @@
             "arguments": [],
             "keyword": "Given ",
             "line": 94,
-            "name": "baseURL is https://reqres.in",
+            "name": "base URL is https://reqres.in",
             "match": {
               "location": "features\\support\\steps.js:12"
             },
@@ -614,7 +950,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 318000000
+              "duration": 300000000
             }
           },
           {
@@ -688,7 +1024,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 273000000
+              "duration": 292000000
             }
           },
           {
@@ -701,7 +1037,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -715,7 +1051,7 @@
             "line": 108,
             "name": "response should have a json like",
             "match": {
-              "location": "features\\support\\steps.js:78"
+              "location": "features\\support\\steps.js:81"
             },
             "result": {
               "status": "passed",
@@ -728,7 +1064,7 @@
             "line": 165,
             "name": "store response data[0].id in id",
             "match": {
-              "location": "features\\support\\steps.js:102"
+              "location": "features\\support\\steps.js:105"
             },
             "result": {
               "status": "passed",
@@ -785,37 +1121,27 @@
           },
           {
             "arguments": [],
-            "keyword": "And ",
-            "line": 170,
-            "name": "wait 3000",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
             "keyword": "Then ",
-            "line": 171,
+            "line": 170,
             "name": "response is received",
             "match": {
               "location": "features\\support\\steps.js:53"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 210000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 172,
+            "line": 171,
             "name": "response status is 200",
             "match": {
               "location": "features\\support\\steps.js:57"
             },
             "result": {
-              "status": "skipped",
+              "status": "passed",
               "duration": 0
             }
           },
@@ -880,7 +1206,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
@@ -893,7 +1219,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 322000000
+              "duration": 294000000
             }
           },
           {
@@ -906,7 +1232,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
@@ -948,13 +1274,13 @@
             "arguments": [],
             "keyword": "Given ",
             "line": 15,
-            "name": "baseURL is https://dog.ceo",
+            "name": "base URL is https://dog.ceo",
             "match": {
               "location": "features\\support\\steps.js:12"
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -980,7 +1306,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 269000000
+              "duration": 486000000
             }
           },
           {
@@ -1018,7 +1344,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
@@ -1039,7 +1365,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
@@ -1070,7 +1396,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 308000000
+              "duration": 330000000
             }
           },
           {
@@ -1083,7 +1409,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {

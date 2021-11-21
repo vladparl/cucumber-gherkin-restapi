@@ -12,6 +12,6 @@ Feature: Upshift
     And response status is 201
 
   Scenario: Login user
-    Given baseURL is https://dog.ceo
+    Given base URL is https://dog.ceo
     When make a GET request to /api/breeds/image/random
     Then response is received

@@ -9,7 +9,7 @@ Before(() => {
   spec.withRequestTimeout(5000);
 });
 
-Given(/^baseURL is (.*)$/, function (baseURL) {
+Given(/^base URL is (.*)$/, function (baseURL) {
   request.setBaseUrl(baseURL);
 });
 
@@ -25,7 +25,7 @@ Given(/^set basic authentication credentials (.*) and (.*)$/, function (username
   spec.withAuth(username, password);
 });
 
-Given(/^set header (.*) with value (.*)$/, function (key, value) {
+Given(/^request header (.*) is (.*)$/, function (key, value) {
   spec.withHeaders(key, value);
 });
 
@@ -59,11 +59,15 @@ Then('response status is {int}', function (code) {
 });
 
 Then(/^response header (.*) is (.*)$/, function (key, value) {
-  spec.response().should.have.header(key, value)
+  spec.response().should.have.header(key, value);
 });
 
 Then(/^response header (.*) contains (.*)$/, function (key, value) {
-  spec.response().should.have.headerContains(key, value)
+  spec.response().should.have.headerContains(key, value);
+});
+
+Then(/^response body contains (.*)$/, function (key) {
+  spec.response().should.have.bodyContains(key);
 });
 
 Then(/^response have a json$/, function (json) {

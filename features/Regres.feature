@@ -91,7 +91,7 @@ Feature: Regres
     """
 
   Scenario: Login with invalid password returns 400
-    Given baseURL is https://reqres.in
+    Given base URL is https://reqres.in
     And make a POST request with body to /api/register
     """
     {
