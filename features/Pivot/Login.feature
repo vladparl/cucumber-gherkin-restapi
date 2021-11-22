@@ -75,3 +75,23 @@ Feature: Authentication
             "statusCode": 401
         }
         """
+
+        Scenario: Login without password
+        Given base URL is https://api.test.pivotenergy.com
+        When make a POST request with body to /auth/login
+        """
+        {
+            "username": "admin@nwh.com",
+            "password": ""
+        }       
+        """
+        Then response is received
+        And response status is 401
+        And response have a json
+        """
+        {
+            "code": "WRONG_CREDENTIALS",
+            "message": "Incorrect username or password",
+            "statusCode": 401
+        }
+        """
