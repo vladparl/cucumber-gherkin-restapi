@@ -1,7 +1,7 @@
 var reporter = require('cucumber-html-reporter');
 
 var options = {
-        name: "BDD Rest API Testing Report",
+        name: "Tallarna REST API Report",
         theme: 'bootstrap',
         jsonFile: 'reports/report.json',
         output: 'reports/cucumber_report.html',
@@ -10,9 +10,10 @@ var options = {
         launchReport: true,
         scenarioTimestamp: true,
         metadata: {
-            "App Version":"1.0.0",
-            "Test Environment": "TESTING",
-            "Platform": "Windows 10",
+            "Environment": "TEST",
+            "Created By": "Vladimir Parlikj",
+            "App Version":"1.10.0",
+            "Date": "12/08/2021"
         }
     };
 
